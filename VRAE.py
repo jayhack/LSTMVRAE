@@ -18,7 +18,7 @@ class LSTMVRAE(Chain):
         :param loss_func: loss function to compute reconstruction error (e.g. F.mean_squared_error)
         """
         self.__dict__.update(locals())
-        super(VRAE, self).__init__(
+        super(LSTMVRAE, self).__init__(
 
             # Encoder (recognition):
             recog_x_h=F.Linear(n_input, n_hidden*4),
